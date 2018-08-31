@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Us</title>
+        <meta name="GCF Homepage" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="bar">|</div>
+                    </li>
+                        
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="bar">|</div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="bar">|</div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="contact-form">
+            <h1 class="form-title">Contact Form</h1>
+            <form action="/api/inquiry" method="post">
+                <div>
+                    Name:
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <select id="title" class="form-control">
+                            <option selected>Ms.</option>
+                            <option>Mr.</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <input type="text" name="first-name" id="first-name" class="form-control" placeholder="First name">
+                    </div>
+                            
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" class="form-control" id="email" name="email-address" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="services">What type of services are you interested in?</label>
+                    <div>                     
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="writing-editing-proofreading" name="services" value="writing-editing-proofreading">
+                            <label class="form-check-label" for="writing-editing-proofreading">Writing, Editing & Proofreading</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="coaching-mentoring" name="services" value="coaching-mentoring">
+                            <label class="form-check-label" for="coaching-mentoring">Coaching & Mentoring</label>
+                        </div>
+                
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="healthcare-consulting" name="services" value="healthcare-consulting">
+                            <label class="form-check-label" for="healthcare-consulting">Healthcare Consulting</label>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Please provide a brief description of your needs.</label>
+                    <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date Needed:</label>
+                    <input type="text" class="form-control" id="date" name="date" placeholder="">
+                </div>
+
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="javascript/contact.js" async defer></script>
+    </body>
+</html>

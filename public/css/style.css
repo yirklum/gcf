@@ -1,0 +1,104 @@
+.bar {
+    margin-top: 8px;
+    color: lightgrey;
+}
+
+.navbar {
+    /* text-transform: uppercase; */
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 4%;
+    background-color: black;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: lightgray;
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+        color: white;
+    }
+}
+
+#world-map {
+    width: 1200px; 
+    height: 500px;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+/* 
+.jqvmap-label{
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #8E8E8E;
+    padding: 3px;
+    font-size:.95em;
+    padding:5px 9px;
+    font-weight:bold;
+    box-shadow:0px 3px 7px 2px rgba(0,0,0,.3); 
+  } */
+
+  .contact-form {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 5%;
+      background-color: black;
+      color: white;
+  }
+
+  form {
+      padding: 30px 25px;
+      width: 80%;
+      margin-left: 12%;
+  }
+
+  .form-title {
+      text-align: center;
+      padding-top: 35px;
+  }
+
+  .logo {
+      width: 45%;
+      margin-left: 25%;
+  }
+
+  .concept {
+      width: 45%;
+      margin-left: 25%;
+      text-align: center;
+      font-family: 'Dosis', sans-serif;
+      font-size: 18px;
+  }
+
+  footer {
+      background-color: grey;
+      color: white;
+      min-height: 75px;
+      margin-top: 10%;
+  }
+
+ .footer-text {
+      text-align: center;
+      position: relative;
+      top: 20px;
+      font-family: 'Dosis', sans-serif;
+  }
