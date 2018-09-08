@@ -9,7 +9,7 @@ $(function(){
     hoverColor: false,
     markerStyle: {
       initial: {
-        fill: '#45e66b',
+        fill: '#6fc5ff',
         stroke: '#383f47',
         "fill-opacity": 1,
         "stroke-width": 2,
@@ -44,7 +44,7 @@ $(function(){
         fill: 'white'
       }
     },
-    backgroundColor: 'white',
+    backgroundColor: "rgba(0,0,0,0)",
     markerLabelStyle: {
       initial: {
         "font-family": "Arial",

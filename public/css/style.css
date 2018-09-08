@@ -10,6 +10,7 @@
     letter-spacing: 3px;
     margin-bottom: 4%;
     background-color: black;
+    height: 40px;
 }
 
 .navbar a {
@@ -38,10 +39,22 @@
 }
 
 #world-map {
-    width: 1200px; 
-    height: 500px;
-    margin-left: 3%;
-    margin-top: 5%;
+    width: 100%; 
+    height: 100%;
+    /* margin-top: 3%; */
+    padding-top: 30px;
+    padding-right: 170px;
+    
+}
+
+#city-background {
+    background-image: url("../images/cities-background.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-repeat: repeat; */
+    height: 515px;
+    width: 100%;
+    margin-left: 4%;
 }
 /* 
 .jqvmap-label{
@@ -58,15 +71,18 @@
   } */
 
   .contact-form {
-      width: 80%;
-      margin-left: 10%;
+      width: 75%;
+      margin-left: 12%;
       margin-top: 5%;
       background-color: black;
       color: white;
+      border-radius: 25px;
+      font-family: 'Playfair Display SC', serif;
+      padding: 20px 0px;
   }
 
   form {
-      padding: 30px 25px;
+      padding: 20px 25px;
       width: 80%;
       margin-left: 12%;
   }
@@ -77,28 +93,71 @@
   }
 
   .logo {
-      width: 45%;
-      margin-left: 25%;
+      width: 40%;
+      margin-left: 28%;
   }
 
   .concept {
-      width: 45%;
-      margin-left: 25%;
+      width: 54%;
+      margin-left: 21%;
       text-align: center;
       font-family: 'Dosis', sans-serif;
-      font-size: 18px;
+      font-size: 20px;
+  }
+  
+  .directions {
+      margin-left: 25%;
+      font-family: 'Fjalla One', sans-serif;
+      margin-top: 3%;
   }
 
   footer {
       background-color: grey;
       color: white;
-      min-height: 75px;
+      /* min-height: 75px; */
       margin-top: 10%;
+      width: 100%;
+      padding: 15px;
   }
 
  .footer-text {
       text-align: center;
-      position: relative;
-      top: 20px;
+      /* position: relative;
+      top: 20px; */
       font-family: 'Dosis', sans-serif;
+      font-size: 18px;
+      padding-left:5%;
   }
+
+  .container {
+      margin: 0 auto;
+  }
+
+  .services {
+      border: 2px solid black;
+      width: 300px;
+      height: 300px;
+      padding-top: 125px;
+      display: inline-block;
+      margin-left: 17%;
+      text-align: center;
+  }
+
+  .form-directions {
+      width: 75%;
+      margin-left: 15%;
+      margin-top: 2%;
+  }
+
+  .copyright {
+      padding-top: 35px;
+  }
+
+.contact-info {
+    padding-top: 15px;
+}
+
+/* .inline {
+    display: inline;
+} */
+

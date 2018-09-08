@@ -2,7 +2,7 @@
 // Require dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
-// var session = require("express-session");
+var nodemailer = require("./config/mail")
 
 // Set up port
 var PORT = process.env.PORT || 8080;
@@ -43,6 +43,14 @@ connection.connect(function(err) {
 
   console.log("connected as id " + connection.threadId);
 });
+
+
+
+
+
+
+
+
 
 // Start server so that it can begin listening to client requests.
 db.sequelize.sync({ force: true }).then(function() {

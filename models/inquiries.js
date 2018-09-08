@@ -25,6 +25,11 @@ module.exports = function(sequelize, DataTypes) {
             }
         },
 
+        phoneNumber: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+
         services: {
             type: DataTypes.STRING,
             allowNull: false
