@@ -1,30 +1,40 @@
 
-var nodemailer = require('nodemailer');
+// Require routes
+// require("./routes/html-routes.js")(app);
+// require("../routes/api-routes")(app);
 
-var transporter = nodemailer.createTransport({
-  service: 'AOL',
-  auth: {
-    user: 'yirklum@aol.com',
-    pass: 'ar3076'
-  }
-});
+// var nodemailer = require('nodemailer');
 
-var mailOptions = {
-  from: 'yirklum@aol.com',
-  to: 'christina.rust@gmail.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
-};
+// var transporter = nodemailer.createTransport({
+//   service: 'AOL',
+//   auth: {
+//     user: 'yirklum@aol.com',
+//     pass: 'ar3076'
+//   }
+// });
 
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
-});
+// var mailOptions = {
+//   from: 'yirklum@aol.com',
+//   to: 'req.body.email',
+//   subject: 'Sending Email using Node.js',
+//   text: 'That was easy!'
+// };
+
+// transporter.sendMail(mailOptions, function(error, info){
+//   if (error) {
+//     console.log(error);
+//   } else {
+//     console.log('Email sent: ' + info.response);
+//   }
+// });
 
  
+
+
+
+
+
+
 // $(document).ready(function() {
 //     $("#form").on("submit", handleSayHello);
 // });
@@ -32,7 +42,7 @@ transporter.sendMail(mailOptions, function(error, info){
 
 
 
-module.exports = nodemailer;
+// module.exports = nodemailer;
 
 
 

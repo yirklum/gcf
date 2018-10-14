@@ -6,16 +6,18 @@
         <title>GCF Homepage</title>
         <meta name="GCF Homepage" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Fjalla+One|Playfair+Display+SC" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>        
         <link rel="stylesheet" href="css/style.css">
         
     </head>
     <body>
+        <script>document.body.className += "fade-out";</script>
         <div>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.jpeg" class="logo">
         </div>
 
         <nav class="navbar navbar-expand-lg">
@@ -37,8 +39,12 @@
                         <div class="bar">|</div>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="editing.html">Writing, Editing & Proofreading</a>
+                                <a class="dropdown-item" href="coaching.html">Coaching & Mentoring</a>
+                            </div>
                     </li>
                     
                     <li class="nav-item">
@@ -52,23 +58,48 @@
             </div>
         </nav>
 
+        <div class="page-content">
+
         <div >
             <p class="concept">
-                We are a trusted global firm that is well-recognized for offering two elite services: 
-                professional editing and coaching services. We have acquired many years of international
-                experience and expertise so that you are able to achieve the results you need. Ultimately,
-                we want to see you succeed.
-            </p>
-
-            <p class="directions">
-               Click on the map below to see where we have conducted our
-                current and previous projects. 
+                How you present yourself to the world matters.
+                <br><br>
+                We live in a world where effective verbal and written communication are the keys to success.
+                Conveying your messages clearly, concisely, and appropriately, will take you to the next level
+                and beyond in both your professional and personal lives. Our team will work exclusively with
+                you to develop the confident, talented, and polished image you will portray to the world.
+                <br><br>
+                Explore the map below to see where we have conducted previous projects and where we continue
+                to work with our clients.
+                <hr>
             </p>
         </div>
 
         <div id="city-background">
             <div id="world-map"></div>
+
+            <hr>
         </div>
+
+        <div class="service-options">
+
+            <h2>
+                Our Services
+            </h2>
+
+            <p>We offer a broad range of writing, editing, and coaching services. Click on one of the categories
+                below for more information on how we can assist you.
+            </p>
+        </div>    
+
+            <div id="services">
+                <a href="editing.html"><img src="images/writing-hand.png"></a>
+
+                <a href="coaching.html"><img src="images/coaching-laptop.png"></a>
+            </div>
+
+        </div>    
+      
 
         <footer>
             <div class="footer-text">
@@ -90,8 +121,9 @@
                             Connect with us:
                         </p>
                         <a href=#><img src="images/facebook-logo.png"></a>
-                        <a href=#><img src="images/linkedin.png"></a>
-                        <a href=#><img src="images/instagram.png"></a>
+                        <a href=#><img src="images/linkedin-logo.png"></a>
+                        <a href=#><img src="images/instagram-logo.png"></a>
+                        <a href=#><img src="images/whatsapp-logo.png"></a>
                     </div>
                 </div>
             </div>

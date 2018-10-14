@@ -2,7 +2,7 @@
 // Require dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
-var nodemailer = require("./config/mail")
+// const nodemailer = require("./routes/api-routes");
 
 // Set up port
 var PORT = process.env.PORT || 8080;
@@ -46,7 +46,29 @@ connection.connect(function(err) {
 
 
 
-
+// app.post('/send', function(req, res, next) {
+//   const transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//       user: 'test-email@gmail.com',
+//       pass: 'test123'
+//     }
+//   })
+// })
+//   const mailOptions = {
+//     from: `${req.body.email}`,
+//     to: 'test-email@gmail.com',
+//     subject: `${req.body.name}`,
+//     text: `${req.body.message}`,
+//     replyTo: `${req.body.email}`
+//   }
+//   transporter.sendMail(mailOptions, function(err, res) {
+//     if (err) {
+//       console.error('there was an error: ', err);
+//     } else {
+//       console.log('here is the res: ', res)
+//     }
+//   })
 
 
 

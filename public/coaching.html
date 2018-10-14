@@ -6,14 +6,18 @@
         <title>GCF Homepage</title>
         <meta name="GCF Homepage" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Fjalla+One|Playfair+Display+SC" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         
     </head>
     <body>
+        <script>document.body.className += "fade-out";</script>
+        
         <div>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.jpeg" class="logo">
         </div>
 
         <nav class="navbar navbar-expand-lg">
@@ -35,8 +39,13 @@
                         <div class="bar">|</div>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="editing.html">Writing, Editing & Proofreading</a>
+                                <a class="dropdown-item" href="coaching.html">Coaching & Mentoring</a>
+                            </div>
                     </li>
                     
                     <li class="nav-item">
@@ -51,21 +60,30 @@
         </nav>
 
         <div class="container">
-            <p>
-                The road to success is a journey. And with the right guidance, our coaches will help you reach
-                your full potential. We offer life coaching for your personal development needs, and we also 
-                offer business coaching for your professional development needs.
-                <br><br>
-                Please be reminded this is a long-term commitment that could take several weeks or a few months.
-                And we will work closely with you and provide you with the resources that will make you succeed.
-                <br><br>
-                Currently, we provide one-on-one coaching and mentoring for undergraduate and graduate students,
-                young professionals, and executives.
-                <br><br>
-                This service is offered by invitation only. However, if you are very interested, we can make an
-                exception! Kindly complete the <a href="contact.html">request form</a>, and our team will contact 
-                you.
-            </p>
+            <h2>Coaching & Mentoring Services</h2>
+
+            <div class="row">
+                <div class="col-md-6 left-column-2">
+                    The road to success is a journey. And with the right guidance, our coaches will help you reach
+                    your full potential. We offer life coaching for your personal development needs, and we also 
+                    offer business coaching for your professional development needs. Please be reminded this is a 
+                    long-term commitment that could take several weeks or a few months. And we will work closely 
+                    with you and provide you with the resources that will make you succeed.
+                </div>
+
+                <div class="col-md-5 right-column">
+                    <img src="images/coaching-graphic.png">
+                </div>
+
+                <p class="coaching-services">
+                    Currently, we provide one-on-one coaching and mentoring for undergraduate and graduate students,
+                    young professionals, and executives. This service is offered by invitation only. However, if you are very interested, we can make an
+                    exception! Kindly complete the <a href="contact.html">request form</a>, and our team will contact 
+                    you.
+                </p>
+            </div>
+
+
         </div>
         
         <footer>
@@ -88,8 +106,9 @@
                             Connect with us:
                         </p>
                         <a href=#><img src="images/facebook-logo.png"></a>
-                        <a href=#><img src="images/linkedin.png"></a>
-                        <a href=#><img src="images/instagram.png"></a>
+                        <a href=#><img src="images/linkedin-logo.png"></a>
+                        <a href=#><img src="images/instagram-logo.png"></a>
+                        <a href=#><img src="images/whatsapp-logo.png"></a>
                     </div>
                 </div>
             </div>
@@ -97,6 +116,6 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script src="javascript/index.js" async defer></script>
+        <script src="javascript/services.js" async defer></script>
     </body>
 </html>

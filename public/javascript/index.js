@@ -1,5 +1,6 @@
 
 $(function(){
+  $("body").removeClass("fade-out");
   $('#world-map').vectorMap({
     map: 'world_mill',
     normalizeFunction: 'polynomial',
@@ -9,14 +10,14 @@ $(function(){
     hoverColor: false,
     markerStyle: {
       initial: {
-        fill: '#6fc5ff',
+        fill: '#dfb634',
         stroke: '#383f47',
         "fill-opacity": 1,
         "stroke-width": 2,
         r: 7
       },
       hover: {
-        fill: "#474040"
+        fill: "#f7e9a3"
       }
     },
     regionStyle: {

@@ -1,3 +1,14 @@
+body {
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+
 .bar {
     margin-top: 8px;
     color: lightgrey;
@@ -21,6 +32,17 @@
     color: lightgray;
 }
 
+.dropdown-menu {
+    background-color: #000000;
+    margin-left: 7%;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    color: #000000;
+    text-align: center;
+}
+
 @media (min-width: 768px){
     .navbar-nav {
         margin: 0 auto;
@@ -38,23 +60,62 @@
     }
 }
 
+.logo {
+    width: 40%;
+    margin-left: 28%;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    margin-top: 10%;
+    width: 100%;
+    padding: 15px;
+}
+
+.footer-text {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    padding-left:5%;
+}
+
+.copyright {
+    padding-top: 35px;
+}
+
+.contact-info {
+  padding-top: 15px;
+}
+
+
+/* Homepage */
+
+.concept {
+    width: 54%;
+    margin-left: 21%;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+hr {
+    width: 45%;
+}
+
 #world-map {
     width: 100%; 
     height: 100%;
-    /* margin-top: 3%; */
     padding-top: 30px;
     padding-right: 170px;
     
 }
 
 #city-background {
-    background-image: url("../images/cities-background.png");
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    /* background-repeat: repeat; */
+    background-image: url("../images/step-and-repeat.png");
     height: 515px;
     width: 100%;
-    margin-left: 4%;
 }
 /* 
 .jqvmap-label{
@@ -69,6 +130,25 @@
     font-weight:bold;
     box-shadow:0px 3px 7px 2px rgba(0,0,0,.3); 
   } */
+
+
+  #services img {
+    border: 2px solid black;
+    width: 33%;
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.service-options {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 75px;
+}
+
+  /* Contact Page */
 
   .contact-form {
       width: 75%;
@@ -92,56 +172,12 @@
       padding-top: 35px;
   }
 
-  .logo {
-      width: 40%;
-      margin-left: 28%;
-  }
-
-  .concept {
-      width: 54%;
-      margin-left: 21%;
-      text-align: center;
-      font-family: 'Dosis', sans-serif;
-      font-size: 20px;
-  }
-  
-  .directions {
+  /* .directions {
       margin-left: 25%;
       font-family: 'Fjalla One', sans-serif;
       margin-top: 3%;
-  }
+  } */
 
-  footer {
-      background-color: grey;
-      color: white;
-      /* min-height: 75px; */
-      margin-top: 10%;
-      width: 100%;
-      padding: 15px;
-  }
-
- .footer-text {
-      text-align: center;
-      /* position: relative;
-      top: 20px; */
-      font-family: 'Dosis', sans-serif;
-      font-size: 18px;
-      padding-left:5%;
-  }
-
-  .container {
-      margin: 0 auto;
-  }
-
-  .services {
-      border: 2px solid black;
-      width: 300px;
-      height: 300px;
-      padding-top: 125px;
-      display: inline-block;
-      margin-left: 17%;
-      text-align: center;
-  }
 
   .form-directions {
       width: 75%;
@@ -149,15 +185,134 @@
       margin-top: 2%;
   }
 
-  .copyright {
-      padding-top: 35px;
-  }
 
-.contact-info {
-    padding-top: 15px;
+/* Editing */
+
+.container {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
 }
 
-/* .inline {
-    display: inline;
-} */
+ul {
+    list-style-type: square;
+    margin-left: 100px;
+    line-height: 40px;
+}
 
+.container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.left-column {
+    line-height: 55px;
+    margin-right: 25px;
+    opacity: 1;
+    position: relative;
+    -webkit-animation-name: text-slide-left; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: text-slide-left;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes text-slide-left {
+    0%   {opacity: 0; left:-500px; top:0px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes text-slide-left {
+    0%   {opacity: 0; left:-500px; top:0px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}
+
+.right-column {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    opacity: 1;
+    position: relative;
+    -webkit-animation-name: text-slide-right; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: text-slide-right;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes text-slide-right {
+    0%   {opacity: 0; left: 1000px; top:0px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes text-slide-right {
+    0%   {opacity: 0; left: 1000px; top:0px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}
+
+.services-list {
+    opacity: 1;
+    position: relative;
+    -webkit-animation-name: text-slide-bottom; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: text-slide-bottom;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes text-slide-bottom {
+    0%   {opacity: 0; left: 0px; top:500px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes text-slide-bottom {
+    0%   {opacity: 0; left: 0px; top:500px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}
+
+.left-column-2 {
+    line-height: 55px;
+    margin-right: 25px;
+    opacity: 1;
+    position: relative;
+    -webkit-animation-name: text-slide-left-2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: text-slide-left-2;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes text-slide-left-2 {
+    0%   {opacity: 0; left:-500px; top:0px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes text-slide-left-2 {
+    0%   {opacity: 0; left:-500px; top:0px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}
+
+.coaching-services {
+    margin-left: 1%;
+    line-height: 50px;
+    opacity: 1;
+    position: relative;
+    -webkit-animation-name: text-slide-bottom-2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: text-slide-bottom-2;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes text-slide-bottom-2 {
+    0%   {opacity: 0; left: 0px; top:500px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes text-slide-bottom-2 {
+    0%   {opacity: 0; left: 0px; top:500px;}
+    100% {opacity: 100%; left:0px; top:0px;}
+}

@@ -6,14 +6,18 @@
         <title>GCF Homepage</title>
         <meta name="GCF Homepage" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Fjalla+One|Playfair+Display+SC" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        
     </head>
+
     <body>
+        <script>document.body.className += "fade-out";</script>
+
         <div>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.jpeg" class="logo">
         </div>
 
         <nav class="navbar navbar-expand-lg">
@@ -35,8 +39,13 @@
                         <div class="bar">|</div>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="editing.html">Writing, Editing & Proofreading</a>
+                                <a class="dropdown-item" href="coaching.html">Coaching & Mentoring</a>
+                            </div>
                     </li>
                     
                     <li class="nav-item">
@@ -51,39 +60,54 @@
         </nav>
 
         <div class="container">
-            <p>
-                In today's world, communication is important. And in order to excel to the next level, either 
-                in the classroom or in business, it is essential for our thoughts and ideas to be clear and 
-                coherent. Our team of experts has tremendous experience in ensuring that your work is presented 
-                in the best possible manner.
-                <br>
-                Our professional editing service provides timely proofreading and editing, including and not
-                limited to:
-            </p>
-            <ul>
-                <li>
-                    Academic publications and manuscripts,
-                </li>
-                <li>
-                    Essays,
-                </li>
-                <li>
-                    Academic theses and doctoral dissertations,
-                </li>
-                <li>
-                    CVs and cover letters,
-                </li>
-                <li>
-                    Professional business memos and reports,
-                </li>
-                <li>
-                    Book editing and other related services
-                </li>
-            </ul>
-            <p>
-                For more information, kindly complete the <a href="contact.html">request form.</a>
-            </p>
+            <h2>Writing & Editing Services</h2>
+            
+            <div class="row">
+                <div class="col-md-6 left-column">
+                    In today's world, communication is important. And in order to excel to the next level, either 
+                    in the classroom or in business, it is essential for our thoughts and ideas to be clear and 
+                    coherent. Our team of experts has tremendous experience in ensuring that your work is presented 
+                    in the best possible manner.
+                </div>
+            
+                <div class="col-md-5 right-column">
+                    <img src="images/green-writing.png">
+                </div>
+            </div>
+
+            <div class="services-list">
+                <p>
+                    Our professional editing service provides timely proofreading and editing, including and not
+                    limited to:
+                </p>
+
+                <ul>
+                    <li>
+                        Academic publications and manuscripts
+                    </li>
+                    <li>
+                        Essays
+                    </li>
+                    <li>
+                        Academic theses and doctoral dissertations
+                    </li>
+                    <li>
+                        CVs and cover letters
+                    </li>
+                    <li>
+                        Professional business memos and reports
+                    </li>
+                    <li>
+                        Book editing and other related services
+                    </li>
+                </ul>
+                <p>
+                    For more information, kindly complete the <a href="contact.html">request form.</a>
+                </p>
+            </div>
         </div>
+
+
 
         <footer>
             <div class="footer-text">
@@ -105,8 +129,9 @@
                             Connect with us:
                         </p>
                         <a href=#><img src="images/facebook-logo.png"></a>
-                        <a href=#><img src="images/linkedin.png"></a>
-                        <a href=#><img src="images/instagram.png"></a>
+                        <a href=#><img src="images/linkedin-logo.png"></a>
+                        <a href=#><img src="images/instagram-logo.png"></a>
+                        <a href=#><img src="images/whatsapp-logo.png"></a>
                     </div>
                 </div>
             </div>
@@ -114,6 +139,6 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script src="javascript/index.js" async defer></script>
+        <script src="javascript/services.js" async defer></script>
     </body>
 </html>

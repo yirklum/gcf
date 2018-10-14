@@ -5,6 +5,7 @@
         <title>Contact Us</title>
         <meta name="GCF Homepage" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cinzel|Fjalla+One|Playfair+Display+SC" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -12,8 +13,10 @@
     </head>
     
     <body>
+        <script>document.body.className += "fade-out";</script>
+
         <div>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.jpeg" class="logo">
         </div>
         
         <nav class="navbar navbar-expand-lg">
@@ -35,8 +38,12 @@
                         <div class="bar">|</div>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="editing.html">Writing, Editing & Proofreading</a>
+                                <a class="dropdown-item" href="coaching.html">Coaching & Mentoring</a>
+                            </div>
                     </li>
                     
                     <li class="nav-item">
@@ -50,65 +57,74 @@
             </div>
         </nav>
 
-        <div class="contact-form">
+        <div>
+            <!-- <iframe class="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeSdlMLrekvRTpYHq6iwJiY2iBB3vSfQqQ8aw--vlIT51iDeQ/viewform?embedded=true" width="640" height="1497" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+
+
             <h1 class="form-title">Contact Form</h1>
             <p class="form-directions">
                 Please provide your information in the fields below and we will get back to you as soon as possible.
             </p>
-            <form action="/api/inquiry" method="post">
+
+            <!-- <script type="text/javascript">var submitted=false;</script>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe> -->
+            
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfbF_89HwFIUVdQOPb810Rq4wUoMqGQrmi20ik-yMaKisBsxg/formResponse" method="post">
+                
                 <div>
                     Name:
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-2">
-                        <select id="title" class="form-control">
+                        <select id="title" class="form-control" name="entry.20378969">
                             <option selected>Ms.</option>
                             <option>Mr.</option>
                         </select>
                     </div>
                     
                     <div class="col-md-4">
-                        <input type="text" name="first-name" id="first-name" class="form-control" placeholder="First name">
+                        <input type="text" name="entry.1319196996" id="first-name" class="form-control" placeholder="First name">
                     </div>
                             
                     <div class="col-md-6">
-                        <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last name">
+                        <input type="text" class="form-control" id="last-name" name="entry.1071154808" placeholder="Last name">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address:</label>
-                    <input type="email" class="form-control" id="email" name="email-address" placeholder="">
+                    <input type="email" class="form-control" id="email" name="entry.1164659962" placeholder="">
                 </div>
 
                 <div class="form-group">
                     <label for="phone-number">Telephone Number:</label>
-                    <input type="text" class="form-control" id="phone-number" name="phone-number" placeholder="">
+                    <input type="text" class="form-control" id="phone-number" name="entry.1250746847" placeholder="">
                 </div>
 
                 <div class="form-group">
                     <label for="services">What type of services are you interested in?</label>
                     <div>                     
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="writing-editing-proofreading" name="services" value="writing-editing-proofreading">
+                            <input class="form-check-input" type="checkbox" id="writing-editing-proofreading" name="entry.1871471129" value="Writing, Editing & Proofreading">
                             <label class="form-check-label" for="writing-editing-proofreading">Writing, Editing & Proofreading</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="coaching-mentoring" name="services" value="coaching-mentoring">
+                            <input class="form-check-input" type="checkbox" id="coaching-mentoring" name="entry.1871471129" value="Coaching & Mentoring">
                             <label class="form-check-label" for="coaching-mentoring">Coaching & Mentoring</label>
                         </div>
                     </div> 
                 </div>
 
                 <div class="form-group">
-                    <label for="description">Please provide a brief description of your needs.</label>
-                    <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                    <label for="description">Please provide a brief description of your request.</label>
+                    <textarea class="form-control" id="description" name="entry.1309190016" rows="3"></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="date">Date Needed:</label>
-                    <input type="text" class="form-control" id="date" name="date" placeholder="">
+                    <input type="text" class="form-control" id="date" name="entry.985938209" placeholder="">
                 </div>
 
                 <button type="submit" id="submit" class="btn btn-primary">Submit</button>
@@ -135,8 +151,9 @@
                             Connect with us:
                         </p>
                         <a href=#><img src="images/facebook-logo.png"></a>
-                        <a href=#><img src="images/linkedin.png"></a>
-                        <a href=#><img src="images/instagram.png"></a>
+                        <a href=#><img src="images/linkedin-logo.png"></a>
+                        <a href=#><img src="images/instagram-logo.png"></a>
+                        <a href=#><img src="images/whatsapp-logo.png"></a>
                     </div>
                 </div>
             </div>
