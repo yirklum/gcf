@@ -1,6 +1,7 @@
 body {
     opacity: 1;
     transition: 2s opacity;
+    font-weight: bold;
 }
 
 body.fade-out {
@@ -19,7 +20,7 @@ body.fade-out {
     font-family: 'Dosis', sans-serif;
     font-size: 18px;
     letter-spacing: 3px;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
     background-color: black;
     height: 40px;
 }
@@ -117,20 +118,6 @@ hr {
     height: 515px;
     width: 100%;
 }
-/* 
-.jqvmap-label{
-    position: absolute;
-    display: none;
-    border-radius: 5px;
-    background: #fff;
-    color: #8E8E8E;
-    padding: 3px;
-    font-size:.95em;
-    padding:5px 9px;
-    font-weight:bold;
-    box-shadow:0px 3px 7px 2px rgba(0,0,0,.3); 
-  } */
-
 
   #services img {
     border: 2px solid black;
@@ -172,17 +159,15 @@ hr {
       padding-top: 35px;
   }
 
-  /* .directions {
-      margin-left: 25%;
-      font-family: 'Fjalla One', sans-serif;
-      margin-top: 3%;
-  } */
-
-
   .form-directions {
       width: 75%;
       margin-left: 15%;
       margin-top: 2%;
+  }
+
+  #submit {
+    background-color: #004d00;
+    margin-top: 5px;
   }
 
 
@@ -197,7 +182,7 @@ hr {
 ul {
     list-style-type: square;
     margin-left: 100px;
-    line-height: 40px;
+    /* line-height: 40px; */
 }
 
 .container h2 {
@@ -205,7 +190,7 @@ ul {
     margin-bottom: 25px;
 }
 .left-column {
-    line-height: 55px;
+    /* line-height: 55px; */
     margin-right: 25px;
     opacity: 1;
     position: relative;
@@ -272,7 +257,19 @@ ul {
 }
 
 .left-column-2 {
-    line-height: 55px;
+    /* line-height: 55px; */
+    margin-right: 25px;
+    opacity: 1;
+    position: relative;
+    -webkit-animation-name: text-slide-left-2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: text-slide-left-2;
+    animation-duration: 2s;
+}
+
+.left-column-3 {
+    /* line-height: 55px; */
+    margin-top: 35px;
     margin-right: 25px;
     opacity: 1;
     position: relative;
@@ -296,7 +293,7 @@ ul {
 
 .coaching-services {
     margin-left: 1%;
-    line-height: 50px;
+    /* line-height: 50px; */
     opacity: 1;
     position: relative;
     -webkit-animation-name: text-slide-bottom-2; /* Safari 4.0 - 8.0 */
@@ -316,3 +313,42 @@ ul {
     0%   {opacity: 0; left: 0px; top:500px;}
     100% {opacity: 100%; left:0px; top:0px;}
 }
+
+
+#confirmation {
+    position: relative;
+    background-color: black;
+    width: 48%;
+    color: white;
+    margin-left: 23%;
+    height: 60%;
+    border-radius: 8px;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+#popuptext {
+    padding: 35px;
+    text-align: center;
+}
+
+#popuptext a {
+    margin: 35px;
+    background-color: #004d00;
+    font-size: 18px;
+}
+

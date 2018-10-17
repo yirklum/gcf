@@ -1,34 +1,30 @@
 
 $(document).ready(function() {
     $("body").removeClass("fade-out");
-    // $(document).on("click", "#submit", insertInquiries, sendEmail);
+    
+    $("#submit").click(function() {
+        $("#confirmation").css("display", "inline-block");
+        $(".contact-form").css("display", "none");
+    });
 
-    function insertInquiries(event) {
-        event.preventDefault();
-        // Capture user inputs and store them in newInquiry object
-        var newInquiry = {
-            title: $("#title").val(),
-            firstName: $("#first-name").val().trim(),
-            lastName: $("#last-name").val().trim(),
-            email: $("#email").val().trim(),
-            phoneNumber: $("#phone-number").val().trim(),
-            services: $("input[name=services]:checked").val(),
-            description: $("#description").val(),
-            date: $("#date").val()
-        };
+    // function submitInquiry(event) {
+    //     // event.preventDefault();
+        
+        
+        
 
-        $.post("/api/inquiries", newInquiry);
-            $("#title").val("");
-            $("#first-name").val("");
-            $("#last-name").val("");
-            $("#email").val("");
-            $("#phone-number").val("");
-            $("input[name=services]:checked").val("");
-            $("#description").val("");
-            $("#date").val("");
+    //     $.post("/api/inquiries", newInquiry);
+    //         $("#title").val("");
+    //         $("#first-name").val("");
+    //         $("#last-name").val("");
+    //         $("#email").val("");
+    //         $("#phone-number").val("");
+    //         $("input[name=services]:checked").val("");
+    //         $("#description").val("");
+    //         $("#date").val("");
 
-            console.log(newInquiry);
-    }
+    //         console.log(newInquiry);
+    // }
 
 
 
